@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers</title>
+</head>
+<body>
+  
+      <script>
+     let num = prompt("Enter Any Nmber");
+      let isPrime=true;
+      if(num>1){
+        for(let i=2;i<num;i++){
+          if(num%i==0){
+            isPrime=false;
+            break;
+          }
+        }
+        if(isPrime==true){
+          alert(num+ "Prime Number")
+        }
+        else{
+          alert(num+ "Not a Prime Number")
+        }
+      }
+      </script>
+   
+</body>
+</html>
